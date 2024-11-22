@@ -7,6 +7,8 @@ RUN apt-get update && \
   webp && \
   apt-get upgrade -y && \
   rm -rf /var/lib/apt/lists/*
+  
+WORKDIR /usr/src/app
 
 COPY package.json .
 
@@ -14,7 +16,6 @@ RUN npm install && npm install -g qrcode-terminal pm2
 
 COPY . .
 
-EXPOSE 3000
+EXPOSE 5000
 
-
-CMD ["pm2-runtime", "start", "index.js"]
+CMD ["npm", "start"]
