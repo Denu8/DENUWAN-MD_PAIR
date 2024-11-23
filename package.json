@@ -1,12 +1,12 @@
 {
-"name": "SAHAS-MD-PAIR-WEB",
+"name": "DENUWAN-MD-PAIR-WEB",
     "version": "0.0.1",
-    "description": "this is official site of SAHAS-MD.",
+    "description": "this is official site of DENUWAN-MD.",
     "main": "index.js",
     "scripts": {
-      "start": "pm2 start index.js --deep-monitoring --attach --name sahas tech pair web",
+      "start": "pm2 start index.js --deep-monitoring --attach --name denuwan tech pair web",
       "stop": "pm2 stop fv2web",
-     "restart": "pm2 restart sahas tech pair web"
+     "restart": "pm2 restart denuwan tech pair web"
     },
   "dependencies": {
     "@whiskeysockets/baileys": "latest",
